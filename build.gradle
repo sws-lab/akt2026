@@ -20,6 +20,8 @@ dependencies {
     implementation 'com.google.guava:guava:33.5.0-jre'
     implementation 'guru.nidi:graphviz-java-all-j2v8:0.18.1'
     implementation 'ch.qos.logback:logback-classic:1.5.32'
+    // week4
+    implementation 'org.eclipse.jdt:org.eclipse.jdt.core:3.44.0'
 
     // initial
     testImplementation 'junit:junit:4.13.2'
