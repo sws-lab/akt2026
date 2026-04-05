@@ -13,6 +13,13 @@ public class RegexGrammar {
         throw new UnsupportedOperationException();
     }
 
+    private char nextNt = 'A';
+    // Genereeri järgmine mitte-terminal (eeldades, et neid liiga palju ei ole).
+    private char getNextNt() {
+        if (nextNt == 'S') nextNt++; // Jätame S vahele, et seda saaks kasutada algsümbolina.
+        return nextNt++;
+    }
+
     static void main() {
         printGrammar(RegexParser.parse("(a|bc)*"));
     }
