@@ -1,5 +1,7 @@
 package toylangs.dialoog.ast;
 
+import cma.instruction.CMaBasicInstruction;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -35,6 +37,10 @@ public record DialoogBinary(BinOp op, DialoogNode leftExpr, DialoogNode rightExp
 
         public BinaryOperator<Object> toJava() {
             return javaOp;
+        }
+
+        public CMaBasicInstruction.Code toCMa() {
+            return CMaBasicInstruction.Code.valueOf(toString().substring(7).toUpperCase());
         }
 
         private final static Map<String, BinOp> symbolMap =
