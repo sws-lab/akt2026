@@ -29,6 +29,11 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.13.2'
     // week7
     antlr 'org.antlr:antlr4:4.13.2'
+    // week8
+    implementation 'io.github.jamsesso:json-logic-java:1.1.0'
+    implementation 'org.jeasy:easy-rules-core:4.1.0'
+    implementation 'org.jeasy:easy-rules-mvel:4.1.0'
+    implementation 'org.mvel:mvel2:2.5.2.Final'
 
     // initial
     testImplementation 'junit:junit:4.13.2'
