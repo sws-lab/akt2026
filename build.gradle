@@ -34,6 +34,8 @@ dependencies {
     implementation 'org.jeasy:easy-rules-core:4.1.0'
     implementation 'org.jeasy:easy-rules-mvel:4.1.0'
     implementation 'org.mvel:mvel2:2.5.2.Final'
+    // week10
+    implementation 'org.ow2.asm:asm:9.9.1'
 
     // initial
     testImplementation 'junit:junit:4.13.2'
